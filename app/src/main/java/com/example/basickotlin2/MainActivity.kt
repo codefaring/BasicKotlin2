@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
             if(num > 5 && num < 9) {
                 continue
             }
-            Log.d("for문 break", "현재 인덱스는 $num 입니다")
+            Log.d("for문 break", "현재 넘은 $num 입니다")
         }
 
         val binding = ActivityMainBinding.inflate(layoutInflater)
