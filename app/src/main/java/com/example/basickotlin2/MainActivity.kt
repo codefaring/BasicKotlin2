@@ -60,6 +60,17 @@ class MainActivity : AppCompatActivity() {
         for((index, name) in userName.withIndex()) {
             println("Index: $index, name: $name")
         }
+        
+        var x = 1
+        when(x) {
+            1 -> println("x는 1")
+            2, 3, 4 -> println("x는 2, 3, 4")
+            in 4..8 -> println("x는 4 ~ 8")
+            !in 9..10 -> println("x는 9 ~ 10 아님")
+            else -> {
+                println("나머지는??!")
+            }
+        }
 
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
