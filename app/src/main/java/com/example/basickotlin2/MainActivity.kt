@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 //            Log.d("while", "현재 숫자는 $count")
 //        }
 
-        while(count < 10) {   // 무한 루프
+        while(count < 10) {
             Log.d("while", "현재 숫자는 $count")
             count += 1
         }
@@ -53,6 +53,12 @@ class MainActivity : AppCompatActivity() {
                 continue
             }
             Log.d("for문 break", "현재 넘은 $num 입니다")
+        }
+        
+        // 인덱스도 같이 출력
+        val userName = arrayOf("김도군", "최연희", "서황미")
+        for((index, name) in userName.withIndex()) {
+            println("Index: $index, name: $name")
         }
 
         val binding = ActivityMainBinding.inflate(layoutInflater)
