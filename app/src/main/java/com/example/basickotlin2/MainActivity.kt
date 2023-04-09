@@ -64,11 +64,11 @@ class MainActivity : AppCompatActivity() {
         var x = 1
         when(x) {
             1 -> println("x는 1")
-            2, 3, 4 -> println("x는 2, 3, 4")
+            2, 3, 4 -> println("x는 2 or 3 or 4")
             in 4..8 -> println("x는 4 ~ 8")
-            !in 9..10 -> println("x는 9 ~ 10 아님")
+            !in 1..10 -> println("x는 1 ~ 10 범위가 아님")
             else -> {
-                println("나머지는??!")
+                println("${x}값은 조건에 없습니다")
             }
         }
 
