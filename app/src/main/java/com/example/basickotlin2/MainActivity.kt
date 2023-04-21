@@ -55,6 +55,14 @@ class MainActivity : AppCompatActivity() {
             Log.d("for문 break", "현재 넘은 $num 입니다")
         }
         
+        val number = 3
+        var numSet = mutableSetOf<Int>()
+
+        for(i in number..8) {
+            numSet.add(i)
+        }
+        println(numSet)
+        
         // 인덱스도 같이 출력
         val userName = arrayOf("김도군", "최연희", "서황미")
         for((index, name) in userName.withIndex()) {
