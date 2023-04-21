@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
                 break
             }
         }
-
+        
         for(num in 1..10) {
             if(num > 5 && num < 9) {
                 continue
@@ -57,11 +57,18 @@ class MainActivity : AppCompatActivity() {
         
         val number = 3
         var numSet = mutableSetOf<Int>()
-
+        
+        // 변수로 범위를 정할 수 있음.
         for(i in number..8) {
             numSet.add(i)
         }
         println(numSet)
+        
+        // 셋크기만큼 출력도 
+        for(i in numSet.indices) {
+            println(i)
+        }
+        
         
         // 인덱스도 같이 출력
         val userName = arrayOf("김도군", "최연희", "서황미")
